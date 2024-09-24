@@ -8,7 +8,7 @@ def fetch_fund_data(fund_name, fund_code):
     base_api_url = f'http://fundf10.eastmoney.com/F10DataApi.aspx?type=lsjz&code={fund_code}&page='
 
     current_date = datetime.now()
-    two_years_ago = current_date - timedelta(days=2 * 365)  # 计算两年前的日期
+    two_years_ago = current_date - timedelta(days=2 * 365)  
 
     page = 1
     all_data = []
